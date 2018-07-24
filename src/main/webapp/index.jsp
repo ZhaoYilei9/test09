@@ -1,6 +1,7 @@
 <%@page pageEncoding="utf-8"  %>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.DateFormat" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <html>
 <body>
 <h2>Hello World! zhao yi lei</h2>
@@ -8,7 +9,9 @@
 <%
     Date date = new Date();
 
-    out.print(date);
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+    String s = sdf.format(date);
+    out.print(s);
 
 
 %>
