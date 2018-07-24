@@ -8,7 +8,8 @@
 <%
     Date date = new Date();
 
-    System.out.println(date);
+    out.print(date);
+
 
 %>
 </body>
