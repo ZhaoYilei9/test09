@@ -9,7 +9,7 @@
 <%
     Date date = new Date();
 
-    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy年-MM月-dd日 hh时:mm分:ss秒");
     String s = sdf.format(date);
     out.print(s);
 
